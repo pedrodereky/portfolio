@@ -238,6 +238,26 @@ p { margin: 0; }
   padding: clamp(24px, 4vw, 56px) var(--gutter) 0;
   max-width: calc(36ch + 2 * var(--gutter));
 }
+.disponivel {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding: 8px 14px 9px 10px;
+  background: var(--ipe);
+  border: var(--rule-fina);
+  font: 700 var(--t-14) / 1.1 var(--sans);
+  text-decoration: none;
+  pointer-events: auto;
+}
+.disponivel::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--nanquim);
+}
+.disponivel:hover { background: var(--nanquim); color: var(--ipe); }
+.disponivel:hover::before { background: var(--ipe); }
 .hero-lede {
   font-size: clamp(var(--t-18), 1.55vw, var(--t-24));
   line-height: 1.45;
@@ -760,6 +780,12 @@ p { margin: 0; }
   font-size: clamp(4rem, 13vw, 12.5rem);
   line-height: 0.8;
   margin-left: -0.03em;
+}
+.contato-dek {
+  max-width: 40ch;
+  margin-top: clamp(20px, 2.6vw, 32px);
+  font-size: clamp(var(--t-18), 1.6vw, var(--t-24));
+  line-height: 1.4;
 }
 .contato-mail {
   display: inline-block;
