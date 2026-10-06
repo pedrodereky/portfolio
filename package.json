@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-joao-pedro-guimaraes",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Portfólio de João Pedro Guimarães — site estático publicado no Cloudflare Pages.",
+  "scripts": {
+    "build": "rm -rf public/assets/js && esbuild src/main.js --bundle --splitting --minify --format=esm --target=es2020 --outdir=public/assets/js --entry-names=app --chunk-names=[name]-[hash]",
+    "dev": "esbuild src/main.js --bundle --splitting --format=esm --target=es2020 --outdir=public/assets/js --entry-names=app --chunk-names=[name]-[hash] --servedir=public --serve=8788"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "three": "^0.186.1"
+  }
+}

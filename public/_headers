@@ -1,0 +1,12 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/city-*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/chunk-*
+  Cache-Control: public, max-age=31536000, immutable

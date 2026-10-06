@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Pedro Guimarães — Portfólio</title>
+  <meta name="description" content="Gerente de TI e desenvolvedor full stack em Brasília. 25 projetos de software com IA aplicada: atendimento por voz e WhatsApp, jurídico, gestão, marketing e 3D.">
+  <meta name="theme-color" content="#C9C5BC">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="João Pedro Guimarães — Portfólio">
+  <meta property="og:description" content="25 projetos de software com IA aplicada, construídos por um gerente de TI e desenvolvedor full stack de Brasília.">
+  <meta property="og:image" content="/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/newsreader-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="config.js"></script>
+  <script src="projects.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="bar">
+    <a class="wordmark" href="#topo" aria-label="João Pedro Guimarães, início">J.P. Guimarães</a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#video">Vídeo</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#indice">Índice</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="som" id="som" type="button" aria-pressed="false">
+      <span class="som-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="som-label">Ligar som</span>
+    </button>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo" aria-labelledby="nome">
+      <div class="city" id="city"></div>
+      <div class="hero-copy">
+        <p class="hero-lede">Gerente de TI e desenvolvedor full stack em Brasília. Em paralelo à gestão, construo produtos com IA aplicada: agentes de atendimento por voz e WhatsApp, ferramentas jurídicas, painéis de gestão, automação de marketing e um editor 3D de moda.</p>
+        <p class="hero-count"><span data-total="projetos">25</span> projetos, <span data-total="telas">335</span> telas e <span data-total="funcoes">360</span> funções de <span class="nowrap">back-end</span>.</p>
+        <p class="hero-caption" id="city-caption">Cada bloco desta quadra é um projeto. A altura soma telas e funções de back-end, e a cobertura é o azulejo que identifica o projeto no resto da página. <span class="only-pointer">Passe o mouse para ver o nome e arraste para girar.</span><span class="only-touch">Toque num bloco para ver o nome; toque de novo para abrir o projeto.</span></p>
+      </div>
+      <h1 class="hero-name" id="nome"><span>João Pedro</span> <span>Guimarães</span></h1>
+      <div class="city-label" id="city-label" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="sec video" id="video" aria-labelledby="video-t">
+      <header class="sec-head">
+        <h2 id="video-t">Apresentação</h2>
+        <p class="dek">Minha trajetória, minhas habilidades e o jeito como eu trabalho, contados por mim.</p>
+      </header>
+      <div class="video-frame" id="video-frame">
+        <div class="video-placeholder" id="video-placeholder">
+          <div class="video-tiles" aria-hidden="true"></div>
+          <div class="video-card">
+            <svg class="video-play" viewBox="0 0 40 40" aria-hidden="true"><path d="M13 9 L32 20 L13 31 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="miter"/></svg>
+            <p class="video-status">Vídeo em produção</p>
+            <p class="video-note">A apresentação em vídeo entra aqui em breve. Enquanto isso, os projetos estão logo abaixo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec projetos" id="projetos" aria-labelledby="projetos-t">
+      <header class="sec-head">
+        <h2 id="projetos-t">Projetos</h2>
+        <p class="dek"><span data-total="destaques">Oito</span> destaques entre os <span data-total="projetos">25</span> projetos. A maioria é full stack, com IA no centro do produto.</p>
+      </header>
+      <div class="spreads" id="spreads"></div>
+    </section>
+
+    <section class="sec indice" id="indice" aria-labelledby="indice-t">
+      <header class="sec-head">
+        <h2 id="indice-t">Índice</h2>
+        <p class="dek">Todos os projetos, por área. Os repositórios são privados; código e demonstrações estão disponíveis sob solicitação.</p>
+      </header>
+      <div class="filters" id="filters" role="group" aria-label="Filtrar por área"></div>
+      <div class="index-head" aria-hidden="true">
+        <span></span><span>Projeto</span><span class="col-area">Área</span><span class="col-n">Telas</span><span class="col-n">Funções</span><span></span>
+      </div>
+      <ul class="index-list" id="index-list"></ul>
+    </section>
+
+    <section class="sec sobre" id="sobre" aria-labelledby="sobre-t">
+      <header class="sec-head">
+        <h2 id="sobre-t">Sobre</h2>
+        <p class="dek">Ciência da Computação no UDF, 4º semestre. Gestão de TI no dia a dia, produto e código no resto do tempo.</p>
+      </header>
+
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p class="sobre-lead">Comecei no suporte, como assistente de TI. Passei a coordenar a área e hoje sou gerente de TI, responsável pela operação e pela equipe técnica.</p>
+          <p>Em paralelo, desenvolvo produtos de software de forma independente: mais de vinte aplicações full stack, quase todas com inteligência artificial aplicada a um problema real, como classificação automática de documentos, RAG, análise de conversas em tempo real e automação de atendimento.</p>
+          <p>Gosto de começar pelo documento de produto. Cada projeto nasce de um PRD, passa por fluxos de usuário e protótipo e só então vira código, com banco de dados, funções serverless e testes. A gestão me ensinou a pensar em quem vai usar o sistema na segunda-feira de manhã; o código me deixa resolver isso com as próprias mãos.</p>
+        </div>
+        <aside class="trajetoria" aria-labelledby="traj-t">
+          <h3 id="traj-t">Trajetória</h3>
+          <ol>
+            <li><span class="step" aria-hidden="true">1</span><span>Assistente de TI</span></li>
+            <li><span class="step" aria-hidden="true">2</span><span>Coordenador de TI</span></li>
+            <li class="atual"><span class="step" aria-hidden="true">3</span><span>Gerente de TI <em>cargo atual</em></span></li>
+          </ol>
+        </aside>
+      </div>
+
+      <div class="skills">
+        <div class="skill">
+          <h3>Front-end</h3>
+          <p>React, TypeScript, JavaScript, HTML e CSS, Tailwind CSS, shadcn/ui, Vite, TanStack Start, three.js</p>
+        </div>
+        <div class="skill">
+          <h3>Back-end e dados</h3>
+          <p>Node.js, Python, PHP, SQL, PostgreSQL, Supabase, arquitetura serverless com Edge Functions, Cloudflare Workers</p>
+        </div>
+        <div class="skill">
+          <h3>IA aplicada</h3>
+          <p>Integração com LLMs (Claude, Gemini, GPT), engenharia de prompt, RAG, agentes de voz e WhatsApp, automação com IA</p>
+        </div>
+        <div class="skill">
+          <h3>Produto e UX</h3>
+          <p>PRDs, fluxos de usuário, prototipagem e design systems</p>
+        </div>
+        <div class="skill">
+          <h3>Ferramentas</h3>
+          <p>Git e GitHub, AWS (Cloud Practitioner), APIs REST, C e C++</p>
+        </div>
+      </div>
+
+      <div class="formacao">
+        <div>
+          <h3>Formação</h3>
+          <dl class="cv-list">
+            <div><dt>Ciência da Computação</dt><dd>Centro Universitário UDF, 2025 a 2028, cursando o 4º semestre</dd></div>
+          </dl>
+          <h3>Idiomas</h3>
+          <dl class="cv-list">
+            <div><dt>Espanhol e francês</dt><dd>Nível básico</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>Cursos e certificações</h3>
+          <dl class="cv-list">
+            <div><dt>Bootcamp Santander Full Stack Developer</dt><dd>Alura e DIO, 125 h, jun/2025 a jan/2026</dd></div>
+            <div><dt>Nexa: Machine Learning e GenAI</dt><dd>DIO e AWS (Bedrock, SageMaker), nov a dez/2025</dd></div>
+            <div><dt>AWS Cloud Practitioner Essentials</dt><dd>AWS Training &amp; Certification, dez/2025</dd></div>
+            <div><dt>Segurança Cibernética: do ataque à defesa</dt><dd>Instituto de Pesquisas Eldorado, 24 h, dez/2025</dd></div>
+            <div><dt>Automação e agentes de IA</dt><dd>Viver de IA: WhatsApp Business API, atendimento multiagentes, tráfego pago com IA, ago/2026</dd></div>
+            <div><dt>Formação complementar</dt><dd>DIO: IA, Machine Learning, Java, Spring Boot, Angular, Git e bancos de dados, mais de 45 cursos</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec contato" id="contato" aria-labelledby="contato-t">
+      <h2 id="contato-t">Vamos conversar</h2>
+      <a class="contato-mail" id="contato-mail" href="mailto:pedro.derek@icloud.com">pedro.derek@icloud.com</a>
+      <ul class="contato-links" id="contato-links"></ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© 2026 João Pedro Guimarães</p>
+    <p>Padrões de azulejo inspirados na obra de Athos Bulcão. Cena 3D feita com three.js.</p>
+  </footer>
+</body>
+</html>
