@@ -279,16 +279,5 @@ window.PROJECTS = [
     stack: ["React", "TypeScript", "Supabase", "React Flow", "react-pdf", "MCP"],
     telas: 9, funcoes: 14,
     status: "", repo: "", demo: ""
-  },
-  {
-    id: "hello-world",
-    nome: "Hello World",
-    area: "lab",
-    destaque: false,
-    resumo: "Primeiro teste com o template TanStack Start.",
-    descricao: "Uma página de boas-vindas usada para testar o template TanStack Start e o fluxo de publicação. É o único repositório público desta lista.",
-    stack: ["TanStack Start", "React", "Tailwind CSS"],
-    telas: 1, funcoes: 0,
-    status: "", repo: "https://github.com/pedrodereky/equilibrium-maker", demo: ""
   }
 ];
