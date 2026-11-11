@@ -279,5 +279,17 @@ window.PROJECTS = [
     stack: ["React", "TypeScript", "Supabase", "React Flow", "react-pdf", "MCP"],
     telas: 9, funcoes: 14,
     status: "", repo: "", demo: ""
+  },
+  {
+    id: "guerra-de-cartas-3d",
+    nome: "Guerra de Cartas 3D",
+    area: "produto",
+    destaque: false,
+    resumo: "Card Wars, de Hora de Aventura, em 3D no navegador. Projeto de fã.",
+    descricao: "Recriação do jogo de cartas de Hora de Aventura, jogado numa mesa 3D dentro da casa da árvore. Tem motor de regras próprio com testes, adversário controlado por IA em um worker, campanha, modo Reino, construtor de baralhos e coleção com mais de 900 cartas. O multiplayer online usa Supabase Realtime e há modo local sem servidor. Criaturas e personagens são modelos 3D animados, com efeitos de partículas, trilha e sons por criatura.",
+    stack: ["React", "TypeScript", "three.js", "React Three Fiber", "Zustand", "GSAP", "Supabase", "Vitest"],
+    telas: 20, funcoes: 0,
+    status: "Em desenvolvimento",
+    repo: "", demo: ""
   }
 ];
