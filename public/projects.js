@@ -25,7 +25,7 @@ window.PROJECTS = [
     stack: ["TanStack Start", "React", "TypeScript", "three.js", "React Three Fiber", "Zustand", "Supabase", "Vitest"],
     telas: 5, funcoes: 0,
     status: "Em desenvolvimento",
-    repo: "", demo: ""
+    repo: "https://github.com/pedrodereky/project-canvas", demo: ""
   },
   {
     id: "arq3d-studio",
@@ -36,7 +36,7 @@ window.PROJECTS = [
     descricao: "Plataforma de arquitetura com IA. Gera plantas 2D a partir de um briefing, analisa plantas existentes com visão computacional, redecora ambientes a partir de uma foto e produz vídeo e visualização 3D. Tem estúdio com detecção de móveis, biblioteca de projetos, links públicos de compartilhamento e painel administrativo com uso e diagnóstico de cada geração.",
     stack: ["TanStack Start", "React", "Supabase", "Gemini", "Replicate", "model-viewer", "Stripe"],
     telas: 27, funcoes: 14,
-    status: "", repo: "", demo: ""
+    status: "", repo: "https://github.com/pedrodereky/arch3d-studio-space", demo: ""
   },
   {
     id: "diario-oficial-scanner",
@@ -45,9 +45,9 @@ window.PROJECTS = [
     destaque: true,
     resumo: "Monitoramento de diários oficiais com classificação por IA e alertas no WhatsApp.",
     descricao: "SaaS que varre o Diário Oficial da União e diários estaduais e municipais, classifica cada publicação com IA e avisa por WhatsApp e e-mail quando um termo monitorado aparece. A arquitetura é orientada a eventos, com cron jobs, fila de reprocessamento, dossiês e briefings gerados por IA e um pipeline próprio para avaliar a qualidade do classificador.",
-    stack: ["React", "TypeScript", "TanStack Start", "Supabase", "Claude", "Firecrawl", "Querido Diário"],
+    stack: ["React", "TypeScript", "TanStack Start", "Supabase", "LLMs", "Firecrawl", "Querido Diário"],
     telas: 25, funcoes: 20,
-    status: "", repo: "", demo: ""
+    status: "", repo: "https://github.com/pedrodereky/scanner-de-diario-oficial", demo: ""
   },
   {
     id: "assina-ai",
@@ -59,6 +59,17 @@ window.PROJECTS = [
     stack: ["React 19", "TypeScript", "TanStack Start", "Supabase", "Cloudflare Workers"],
     telas: 22, funcoes: 28,
     status: "", repo: "", demo: ""
+  },
+  {
+    id: "colheita-urbana",
+    nome: "Colheita Urbana",
+    area: "gestao",
+    destaque: true,
+    resumo: "Logística de doação de alimentos: do excedente do mercado à mesa da ONG, com rastreio ao vivo.",
+    descricao: "Plataforma que liga estabelecimentos com alimentos excedentes a organizações sociais, com voluntários fazendo o transporte. A ONG reserva a oferta, o voluntário aceita a coleta e compartilha a localização, e todos acompanham mapa, tempo estimado e chat ao vivo até a entrega, que gera um recibo em PDF verificável. O gestor tem indicadores, ranking, auditoria e exportação. Implementa uma especificação completa com 40 requisitos funcionais e 46 casos de uso, sem nenhuma dependência npm: Node.js com o SQLite nativo e uma API REST de 67 endpoints coberta por testes automatizados.",
+    stack: ["Node.js", "SQLite", "JavaScript", "Server-Sent Events", "Leaflet", "Cloudflare Pages"],
+    telas: 49, funcoes: 0,
+    status: "", repo: "https://github.com/pedrodereky/colheita-urbana", demo: ""
   },
   {
     id: "trafego-pago",
@@ -91,7 +102,7 @@ window.PROJECTS = [
     descricao: "Plataforma de reuniões com videoconferência própria, gravação e transcrição em tempo real. Quando a reunião termina, a IA gera resumo, briefing e itens de ação, que seguem por e-mail e Slack. Tem agenda, contatos, lembretes automáticos e testes end-to-end.",
     stack: ["React", "LiveKit", "Deepgram", "Supabase", "Playwright"],
     telas: 13, funcoes: 18,
-    status: "", repo: "", demo: ""
+    status: "", repo: "https://github.com/pedrodereky/briefbot-plataforma-de-reuni-es", demo: ""
   },
   {
     id: "gabinete-conectado",
@@ -157,7 +168,7 @@ window.PROJECTS = [
     descricao: "Plataforma para advogados. Gera peças processuais com IA, organiza casos, clientes, tarefas e financeiro, captura publicações do DJEN, consulta processos pelo número CNJ, extrai texto de documentos por OCR e preenche cadastros por voz. Avisa por e-mail e WhatsApp.",
     stack: ["React", "TypeScript", "Supabase", "IA generativa", "Playwright"],
     telas: 21, funcoes: 10,
-    status: "", repo: "", demo: ""
+    status: "", repo: "https://github.com/pedrodereky/peticionamento-com-ia", demo: ""
   },
   {
     id: "juris-ai",
@@ -291,5 +302,16 @@ window.PROJECTS = [
     telas: 20, funcoes: 0,
     status: "Em desenvolvimento",
     repo: "", demo: ""
+  },
+  {
+    id: "equilibrium",
+    nome: "Equilíbrium",
+    area: "lab",
+    destaque: false,
+    resumo: "Jogo educativo de Árvores AVL em que o jogador faz cada rotação.",
+    descricao: "Feito para a disciplina de Estruturas de Dados II. Ao contrário dos visualizadores tradicionais, o jogo nunca rebalanceia sozinho: a cada desbalanceamento o jogador identifica o nó crítico e escolhe a rotação correta. Errar demais degenera a árvore em lista encadeada e a partida acaba. Tem fases, recordes e efeitos sonoros.",
+    stack: ["React", "TypeScript", "TanStack Start", "Framer Motion", "Tailwind CSS", "Vitest"],
+    telas: 5, funcoes: 0,
+    status: "", repo: "https://github.com/pedrodereky/equilibrium-maker", demo: ""
   }
 ];
