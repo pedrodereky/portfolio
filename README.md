@@ -55,3 +55,12 @@ Só é preciso rodar o build quando algo em `src/` mudar. Mudanças em `config.j
 ## Publicação
 
 O Cloudflare Pages publica a pasta `public/` a cada push na branch `main` (sem comando de build).
+
+## Checagens
+
+```sh
+node scripts/check-projects.mjs   # valida public/projects.js e os totais do index.html
+npm run build                     # regenera public/assets/js (versionado)
+```
+
+O GitHub Actions roda as duas em todo push e PR, e falha se `public/assets/js` não corresponder ao `src/` atual.
