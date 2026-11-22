@@ -16,3 +16,5 @@ jobs:
           node-version: 22
       - name: Todo arquivo citado existe em public/
         run: node scripts/check-site.mjs
+      - name: Função do formulário de contato
+        run: node scripts/test-contato.mjs

@@ -167,24 +167,64 @@ L['fr'] = dict(
 )
 
 PRIV = {
- 'pt': dict(updated='Atualizado em 21 de novembro de 2026', sections=[
-  dict(title='Quem trata os dados', text=['Este site pertence a João Pedro Guimarães. Para qualquer dúvida, escreva para pedro.derek@icloud.com.']),
-  dict(title='O que é coletado', text=['No momento, este site não coleta dados pessoais, não usa cookies de rastreamento e não tem anúncios.', 'Se você me escrever por e-mail ou pelo LinkedIn, uso a mensagem apenas para responder.']),
-  dict(title='O que o seu navegador armazena', text=['O site lembra no seu navegador (localStorage) o seu idioma, se o som está ligado, que você já viu a introdução e o contador de bugs esmagados. Isso nunca sai do seu dispositivo, e você pode limpar nas configurações do navegador. Como qualquer servidor, a hospedagem pode manter logs técnicos de requisições (endereço IP, horário, página).']),
-  dict(title='Seus direitos', text=['Você pode perguntar quais dados eu tenho sobre você e pedir que sejam corrigidos ou excluídos, escrevendo para pedro.derek@icloud.com.']),
-  dict(title='Alterações', text=['Quando o site passar a coletar estatísticas ou receber mensagens por formulário, esta política será atualizada e a nova versão aparecerá nesta página com uma nova data.'])]),
- 'en': dict(updated='Updated on November 21, 2026', sections=[
-  dict(title='Who handles the data', text=['This site belongs to João Pedro Guimarães. For any question, write to pedro.derek@icloud.com.']),
-  dict(title='What is collected', text=['At the moment this site does not collect personal data, does not use tracking cookies and has no ads.', 'If you write to me by e-mail or on LinkedIn, I use the message only to reply.']),
-  dict(title='What your browser stores', text=['The site remembers in your browser (localStorage) your language, whether sound is on, that you have seen the intro and the squashed-bugs counter. This never leaves your device, and you can clear it in your browser settings. Like any server, the hosting may keep technical request logs (IP address, time, page).']),
-  dict(title='Your rights', text=['You can ask what data I hold about you and ask for it to be corrected or deleted by writing to pedro.derek@icloud.com.']),
-  dict(title='Changes', text=['When the site starts collecting statistics or receiving messages through a form, this policy will be updated and the new version will appear on this page with a new date.'])]),
- 'fr': dict(updated='Mis à jour le 21 novembre 2026', sections=[
-  dict(title='Qui traite les données', text=['Ce site appartient à João Pedro Guimarães. Pour toute question, écrivez à pedro.derek@icloud.com.']),
-  dict(title='Ce qui est collecté', text=['Pour le moment, ce site ne collecte aucune donnée personnelle, n’utilise pas de cookies de suivi et n’a pas de publicité.', 'Si vous m’écrivez par e-mail ou sur LinkedIn, j’utilise le message uniquement pour répondre.']),
-  dict(title='Ce que stocke votre navigateur', text=['Le site mémorise dans votre navigateur (localStorage) votre langue, si le son est activé, que vous avez vu l’intro et le compteur de bugs écrasés. Cela ne quitte jamais votre appareil et vous pouvez l’effacer dans les paramètres du navigateur. Comme tout serveur, l’hébergeur peut conserver des journaux techniques de requêtes (adresse IP, heure, page).']),
-  dict(title='Vos droits', text=['Vous pouvez demander quelles données j’ai sur vous et demander leur correction ou suppression en écrivant à pedro.derek@icloud.com.']),
-  dict(title='Modifications', text=['Lorsque le site commencera à collecter des statistiques ou à recevoir des messages via un formulaire, cette politique sera mise à jour et la nouvelle version apparaîtra sur cette page avec une nouvelle date.'])]),
+ 'pt': dict(updated='Atualizado em 22 de novembro de 2026', sections=[
+  dict(title='Quem trata os dados', text=['Este site pertence a João Pedro Guimarães. Para qualquer dúvida sobre os seus dados, escreva para pedro.derek@icloud.com.']),
+  dict(title='O que é coletado', text=[
+    'O formulário “Fale comigo”: nome, contato (e-mail ou telefone), assunto, previsão de início, mensagem, idioma do site e a página de onde ele foi enviado.',
+    'O formulário “Achou um bug?”: a descrição do problema, um contato (opcional), uma captura de tela (opcional), o endereço da página, o navegador, o tamanho da janela e da tela e o idioma do site.',
+    'O site não usa cookies de rastreamento, não tem anúncios e não coleta estatísticas de visitas.']),
+  dict(title='Por quê', text=['Só para responder à sua mensagem ou corrigir um problema no site. A base legal é o seu consentimento ao enviar o formulário. Não envio newsletters e nunca vendo nem compartilho seus dados.']),
+  dict(title='Onde ficam', text=['As mensagens são entregues no meu e-mail pelo serviço Resend (Resend, Inc., Estados Unidos), que mantém registros de envio por um período limitado. Depois disso, ficam apenas na minha caixa de e-mail, à qual só eu tenho acesso.']),
+  dict(title='Por quanto tempo', text=['Enquanto estivermos conversando e por até três anos depois da última mensagem; antes disso, se você pedir.']),
+  dict(title='O que o seu navegador armazena', text=['O site lembra no seu navegador (localStorage) o seu idioma, se o som está ligado, que você já viu a introdução e o contador de bugs esmagados. Se você deixar um like, o navegador guarda um código aleatório só para não contar duas vezes; esse código não é guardado no servidor. Nada disso sai do seu dispositivo, e você pode limpar nas configurações do navegador. Como qualquer servidor, a hospedagem pode manter registros técnicos de acesso (endereço IP, horário, página).']),
+  dict(title='Seus direitos', text=['Conforme a LGPD, você pode perguntar quais dados eu tenho sobre você, pedir correção ou exclusão e retirar o seu consentimento, escrevendo para pedro.derek@icloud.com. Respondo em até 15 dias.']),
+  dict(title='Alterações', text=['Se esta política mudar, a nova versão aparecerá nesta página com uma nova data.'])]),
+ 'en': dict(updated='Updated on November 22, 2026', sections=[
+  dict(title='Who handles the data', text=['This site belongs to João Pedro Guimarães. For any question about your data, write to pedro.derek@icloud.com.']),
+  dict(title='What is collected', text=[
+    'The “Get in touch” form: name, contact (email or phone), subject, expected start, message, site language and the page it was sent from.',
+    'The “Found a bug?” form: a description of the problem, a contact (optional), a screenshot (optional), the page address, browser, window and screen size and the site language.',
+    'The site does not use tracking cookies, has no ads and does not collect visit statistics.']),
+  dict(title='Why', text=['Only to reply to your message or fix a problem on the site. The legal basis is your consent when you send the form. I do not send newsletters and never sell or share your data.']),
+  dict(title='Where it is stored', text=['Messages are delivered to my email by the Resend service (Resend, Inc., United States), which keeps delivery logs for a limited time. After that they stay only in my mailbox, which only I can access.']),
+  dict(title='How long it is kept', text=['While we are talking and for up to three years after the last message; earlier if you ask.']),
+  dict(title='What your browser stores', text=['The site remembers in your browser (localStorage) your language, whether sound is on, that you have seen the intro and the squashed-bugs counter. If you leave a like, the browser keeps a random code only so it is not counted twice; that code is not stored on the server. None of this leaves your device, and you can clear it in your browser settings. Like any server, the hosting may keep technical access logs (IP address, time, page).']),
+  dict(title='Your rights', text=['Under Brazil’s LGPD and similar laws, you can ask what data I hold about you, ask for it to be corrected or deleted and withdraw your consent by writing to pedro.derek@icloud.com. I reply within 15 days.']),
+  dict(title='Changes', text=['If this policy changes, the new version will appear on this page with a new date.'])]),
+ 'fr': dict(updated='Mis à jour le 22 novembre 2026', sections=[
+  dict(title='Qui traite les données', text=['Ce site appartient à João Pedro Guimarães. Pour toute question sur vos données, écrivez à pedro.derek@icloud.com.']),
+  dict(title='Ce qui est collecté', text=[
+    'Le formulaire « Me contacter » : nom, contact (e-mail ou téléphone), sujet, date de début prévue, message, langue du site et la page d’où il a été envoyé.',
+    'Le formulaire « Un bug ? » : la description du problème, un contact (facultatif), une capture d’écran (facultative), l’adresse de la page, le navigateur, la taille de la fenêtre et de l’écran et la langue du site.',
+    'Le site n’utilise pas de cookies de suivi, n’a pas de publicité et ne collecte pas de statistiques de visite.']),
+  dict(title='Pourquoi', text=['Uniquement pour répondre à votre message ou corriger un problème sur le site. La base légale est votre consentement lors de l’envoi du formulaire. Je n’envoie pas de newsletter et ne vends ni ne partage jamais vos données.']),
+  dict(title='Où elles sont stockées', text=['Les messages sont livrés dans ma boîte e-mail par le service Resend (Resend, Inc., États-Unis), qui conserve des journaux d’envoi pendant une durée limitée. Ensuite, ils restent uniquement dans ma boîte e-mail, à laquelle moi seul ai accès.']),
+  dict(title='Durée de conservation', text=['Tant que nous échangeons et jusqu’à trois ans après le dernier message ; plus tôt si vous le demandez.']),
+  dict(title='Ce que stocke votre navigateur', text=['Le site mémorise dans votre navigateur (localStorage) votre langue, si le son est activé, que vous avez vu l’intro et le compteur de bugs écrasés. Si vous laissez un like, le navigateur garde un code aléatoire uniquement pour ne pas le compter deux fois ; ce code n’est pas stocké sur le serveur. Rien de cela ne quitte votre appareil, et vous pouvez l’effacer dans les paramètres du navigateur. Comme tout serveur, l’hébergeur peut conserver des journaux techniques d’accès (adresse IP, heure, page).']),
+  dict(title='Vos droits', text=['Conformément à la LGPD brésilienne et aux lois similaires, vous pouvez demander quelles données j’ai sur vous, leur correction ou leur suppression et retirer votre consentement en écrivant à pedro.derek@icloud.com. Je réponds sous 15 jours.']),
+  dict(title='Modifications', text=['Si cette politique change, la nouvelle version apparaîtra sur cette page avec une nouvelle date.'])]),
+}
+
+# formulário "Fale comigo": campos de quem procura vaga (o campo "budget" vira "quando começa")
+FORM = {
+ 'pt': dict(title='Fale comigo', lead='Conte sobre a vaga, o projeto ou a ideia — eu mesmo leio e respondo.',
+            types='Sobre o quê', typeOptions=['Vaga (CLT ou PJ)', 'Estágio ou trainee', 'Projeto freelance', 'Só um oi', 'Outro'],
+            budget='Quando começa', budgetOptions=['Imediato', 'Em até 1 mês', 'Em 1 a 3 meses', 'Ainda não sei'],
+            message='Mensagem', messagePlaceholder='A vaga ou o projeto, prazos e links úteis',
+            sentTitle='Obrigado! Recebi sua mensagem.', sentText='Respondo em breve no contato que você deixou.',
+            messageShort='Escreva pelo menos algumas palavras'),
+ 'en': dict(title='Get in touch', lead='Tell me about the role, the project or the idea — I read and reply myself.',
+            types='What about', typeOptions=['Job (full-time or contract)', 'Internship or trainee', 'Freelance project', 'Just saying hi', 'Other'],
+            budget='When does it start', budgetOptions=['Right away', 'Within 1 month', 'In 1 to 3 months', 'Not sure yet'],
+            message='Message', messagePlaceholder='The role or the project, timelines and useful links',
+            sentTitle='Thank you! I got your message.', sentText='I will reply soon at the contact you left.',
+            messageShort='Write at least a few words'),
+ 'fr': dict(title='Me contacter', lead='Parlez-moi du poste, du projet ou de l’idée — je lis et je réponds moi-même.',
+            types='À propos de', typeOptions=['Poste (CDI ou freelance)', 'Stage ou trainee', 'Projet freelance', 'Juste un bonjour', 'Autre'],
+            budget='Début prévu', budgetOptions=['Immédiat', 'D’ici 1 mois', 'Dans 1 à 3 mois', 'Je ne sais pas encore'],
+            message='Message', messagePlaceholder='Le poste ou le projet, les délais et des liens utiles',
+            sentTitle='Merci ! J’ai bien reçu votre message.', sentText='Je vous réponds bientôt au contact indiqué.',
+            messageShort='Écrivez au moins quelques mots'),
 }
 
 ROLES = {'pt': {'viver': 'Automação e agentes de IA', 'eldorado': 'Segurança Cibernética: do ataque à defesa (24h)', 'cloud': 'Cloud Practitioner Essentials', 'genai': 'Machine Learning e GenAI', 'santander': 'Bootcamp Full Stack Developer (125h)', 'others': 'Gestão, equipes e informática'}, 'en': {'viver': 'Automation and AI agents', 'eldorado': 'Cybersecurity: from attack to defense (24h)', 'cloud': 'Cloud Practitioner Essentials', 'genai': 'Machine Learning and GenAI', 'santander': 'Full Stack Developer bootcamp (125h)', 'others': 'Management, teams and computing'}, 'fr': {'viver': 'Automatisation et agents IA', 'eldorado': 'Cybersécurité : de l’attaque à la défense (24 h)', 'cloud': 'Cloud Practitioner Essentials', 'genai': 'Machine Learning et GenAI', 'santander': 'Bootcamp Full Stack Developer (125 h)', 'others': 'Gestion, équipes et bureautique'}}
@@ -197,14 +237,18 @@ def patch_block(text, lang):
     for k, v in L[lang].items():
         text = set_key(text, k, v)
     pp = PRIV[lang]
-    text = set_key(text, 'privacyPage', dict(kicker=None, updated=pp['updated'], sections=pp['sections']), 6) if False else text
     # privacyPage: mantem kicker, troca updated e sections
     text = re.sub(r'(      privacyPage: \{\n        kicker: `[^`]*`,\n)        updated: `[^`]*`,\n        sections: \[.*?\n        \],\n      \},',
                   lambda m: m.group(1)+'        updated: '+js(pp['updated'])+',\n        sections: '+js(pp['sections'], 8)+',\n      },',
                   text, count=1, flags=re.S)
     assert pp['updated'] in text
-    # textos que citavam Telegram nos formularios (ainda sem backend)
-    text = text.replace('Telegram ou telefone','e-mail ou LinkedIn') if False else text
+    # formulário "Fale comigo": só as chaves de FORM, dentro do bloco form
+    i = text.index('      form: {') + len('      form: ')
+    j = span_end(text, i)
+    sub = text[i:j]
+    for k, v in FORM[lang].items():
+        sub = set_key(sub, k, v, indent=8)
+    text = text[:i] + sub + text[j:]
     return text
 
 for lang, fn in [('pt','pt-block'),('fr','fr-block'),('en','en-block')]:
@@ -309,6 +353,10 @@ rep("r = (e) => (e.from ? `${e.from}${Wi}${e.to || t.t(`experiencePresent`)}` : 
 # idioma padrao: portugues (antes era sempre ingles)
 rep("Sn = () => (bn(), `en`),", "Sn = () => (bn(), `pt`),")
 rep("    language: `en`,\n    locales:", "    language: `pt`,\n    locales:")
+
+# formulário: envia para a função /api/contato (Cloudflare Pages); sem reCAPTCHA
+rep("url: `FORM_ENDPOINT`,", "url: `/api/contato`,")
+rep("siteKey: `RECAPTCHA_SITE_KEY`,", "siteKey: ``,")
 
 open(P('index.orig.js'), 'w', encoding='utf8').write(o)
 print('ok')

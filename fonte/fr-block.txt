@@ -293,37 +293,56 @@
       privacy: `Politique de confidentialité`,
       privacyPage: {
         kicker: `Mentions légales`,
-        updated: `Mis à jour le 21 novembre 2026`,
+        updated: `Mis à jour le 22 novembre 2026`,
         sections: [
           {
             title: `Qui traite les données`,
             text: [
-              `Ce site appartient à João Pedro Guimarães. Pour toute question, écrivez à pedro.derek@icloud.com.`,
+              `Ce site appartient à João Pedro Guimarães. Pour toute question sur vos données, écrivez à pedro.derek@icloud.com.`,
             ],
           },
           {
             title: `Ce qui est collecté`,
             text: [
-              `Pour le moment, ce site ne collecte aucune donnée personnelle, n’utilise pas de cookies de suivi et n’a pas de publicité.`,
-              `Si vous m’écrivez par e-mail ou sur LinkedIn, j’utilise le message uniquement pour répondre.`,
+              `Le formulaire « Me contacter » : nom, contact (e-mail ou téléphone), sujet, date de début prévue, message, langue du site et la page d’où il a été envoyé.`,
+              `Le formulaire « Un bug ? » : la description du problème, un contact (facultatif), une capture d’écran (facultative), l’adresse de la page, le navigateur, la taille de la fenêtre et de l’écran et la langue du site.`,
+              `Le site n’utilise pas de cookies de suivi, n’a pas de publicité et ne collecte pas de statistiques de visite.`,
+            ],
+          },
+          {
+            title: `Pourquoi`,
+            text: [
+              `Uniquement pour répondre à votre message ou corriger un problème sur le site. La base légale est votre consentement lors de l’envoi du formulaire. Je n’envoie pas de newsletter et ne vends ni ne partage jamais vos données.`,
+            ],
+          },
+          {
+            title: `Où elles sont stockées`,
+            text: [
+              `Les messages sont livrés dans ma boîte e-mail par le service Resend (Resend, Inc., États-Unis), qui conserve des journaux d’envoi pendant une durée limitée. Ensuite, ils restent uniquement dans ma boîte e-mail, à laquelle moi seul ai accès.`,
+            ],
+          },
+          {
+            title: `Durée de conservation`,
+            text: [
+              `Tant que nous échangeons et jusqu’à trois ans après le dernier message ; plus tôt si vous le demandez.`,
             ],
           },
           {
             title: `Ce que stocke votre navigateur`,
             text: [
-              `Le site mémorise dans votre navigateur (localStorage) votre langue, si le son est activé, que vous avez vu l’intro et le compteur de bugs écrasés. Cela ne quitte jamais votre appareil et vous pouvez l’effacer dans les paramètres du navigateur. Comme tout serveur, l’hébergeur peut conserver des journaux techniques de requêtes (adresse IP, heure, page).`,
+              `Le site mémorise dans votre navigateur (localStorage) votre langue, si le son est activé, que vous avez vu l’intro et le compteur de bugs écrasés. Si vous laissez un like, le navigateur garde un code aléatoire uniquement pour ne pas le compter deux fois ; ce code n’est pas stocké sur le serveur. Rien de cela ne quitte votre appareil, et vous pouvez l’effacer dans les paramètres du navigateur. Comme tout serveur, l’hébergeur peut conserver des journaux techniques d’accès (adresse IP, heure, page).`,
             ],
           },
           {
             title: `Vos droits`,
             text: [
-              `Vous pouvez demander quelles données j’ai sur vous et demander leur correction ou suppression en écrivant à pedro.derek@icloud.com.`,
+              `Conformément à la LGPD brésilienne et aux lois similaires, vous pouvez demander quelles données j’ai sur vous, leur correction ou leur suppression et retirer votre consentement en écrivant à pedro.derek@icloud.com. Je réponds sous 15 jours.`,
             ],
           },
           {
             title: `Modifications`,
             text: [
-              `Lorsque le site commencera à collecter des statistiques ou à recevoir des messages via un formulaire, cette politique sera mise à jour et la nouvelle version apparaîtra sur cette page avec une nouvelle date.`,
+              `Si cette politique change, la nouvelle version apparaîtra sur cette page avec une nouvelle date.`,
             ],
           },
         ],
@@ -356,28 +375,34 @@
         again: `Un autre bug`,
       },
       form: {
-        title: `Lancer un projet`,
-        lead: `Quelques lignes sur la tâche — et je reviens vers vous avec des questions ou une estimation.`,
+        title: `Me contacter`,
+        lead: `Parlez-moi du poste, du projet ou de l’idée — je lis et je réponds moi-même.`,
         name: `Nom`,
         namePlaceholder: `Comment dois-je vous appeler`,
         contact: `E-mail ou téléphone`,
         contactPlaceholder: `vous@email.com ou +55 61 99999-9999`,
-        types: `Ce dont vous avez besoin`,
-        typeOptions: [`Landing page`, `Site web`, `3D / WebGL`, `Jeu / playable`, `Animation`, `Autre`],
-        budget: `Budget`,
-        budgetOptions: [`moins de 1 k$`, `1–3 k$`, `3–7 k$`, `7 k$+`, `Pas encore sûr`],
-        message: `À propos du projet`,
-        messagePlaceholder: `Ce que nous construisons, délais, liens vers les maquettes`,
+        types: `À propos de`,
+        typeOptions: [
+          `Poste (CDI ou freelance)`,
+          `Stage ou trainee`,
+          `Projet freelance`,
+          `Juste un bonjour`,
+          `Autre`,
+        ],
+        budget: `Début prévu`,
+        budgetOptions: [`Immédiat`, `D’ici 1 mois`, `Dans 1 à 3 mois`, `Je ne sais pas encore`],
+        message: `Message`,
+        messagePlaceholder: `Le poste ou le projet, les délais et des liens utiles`,
         send: `Envoyer`,
         sending: `Envoi…`,
-        sentTitle: `Merci ! J’ai bien reçu votre brief.`,
-        sentText: `Je vous répondrai moi-même très bientôt — via le contact que vous avez laissé.`,
+        sentTitle: `Merci ! J’ai bien reçu votre message.`,
+        sentText: `Je vous réponds bientôt au contact indiqué.`,
         again: `Écrire à nouveau`,
         error: `Envoi impossible. Réessayez ou écrivez à pedro.derek@icloud.com.`,
         offline: `Le formulaire n’est pas encore connecté — écrivez à pedro.derek@icloud.com.`,
         required: `Veuillez remplir ce champ`,
         contactInvalid: `Ajoutez un e-mail ou un numéro de téléphone`,
-        messageShort: `Écrivez au moins quelques mots sur la tâche`,
+        messageShort: `Écrivez au moins quelques mots`,
         nameShort: `Un nom doit comporter au moins deux lettres`,
         nameDigits: `Un nom ne peut pas contenir de chiffres`,
         consent: `En envoyant le formulaire, vous acceptez la`,

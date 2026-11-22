@@ -291,37 +291,56 @@
       privacy: `Privacy policy`,
       privacyPage: {
         kicker: `Legal`,
-        updated: `Updated on November 21, 2026`,
+        updated: `Updated on November 22, 2026`,
         sections: [
           {
             title: `Who handles the data`,
             text: [
-              `This site belongs to João Pedro Guimarães. For any question, write to pedro.derek@icloud.com.`,
+              `This site belongs to João Pedro Guimarães. For any question about your data, write to pedro.derek@icloud.com.`,
             ],
           },
           {
             title: `What is collected`,
             text: [
-              `At the moment this site does not collect personal data, does not use tracking cookies and has no ads.`,
-              `If you write to me by e-mail or on LinkedIn, I use the message only to reply.`,
+              `The “Get in touch” form: name, contact (email or phone), subject, expected start, message, site language and the page it was sent from.`,
+              `The “Found a bug?” form: a description of the problem, a contact (optional), a screenshot (optional), the page address, browser, window and screen size and the site language.`,
+              `The site does not use tracking cookies, has no ads and does not collect visit statistics.`,
+            ],
+          },
+          {
+            title: `Why`,
+            text: [
+              `Only to reply to your message or fix a problem on the site. The legal basis is your consent when you send the form. I do not send newsletters and never sell or share your data.`,
+            ],
+          },
+          {
+            title: `Where it is stored`,
+            text: [
+              `Messages are delivered to my email by the Resend service (Resend, Inc., United States), which keeps delivery logs for a limited time. After that they stay only in my mailbox, which only I can access.`,
+            ],
+          },
+          {
+            title: `How long it is kept`,
+            text: [
+              `While we are talking and for up to three years after the last message; earlier if you ask.`,
             ],
           },
           {
             title: `What your browser stores`,
             text: [
-              `The site remembers in your browser (localStorage) your language, whether sound is on, that you have seen the intro and the squashed-bugs counter. This never leaves your device, and you can clear it in your browser settings. Like any server, the hosting may keep technical request logs (IP address, time, page).`,
+              `The site remembers in your browser (localStorage) your language, whether sound is on, that you have seen the intro and the squashed-bugs counter. If you leave a like, the browser keeps a random code only so it is not counted twice; that code is not stored on the server. None of this leaves your device, and you can clear it in your browser settings. Like any server, the hosting may keep technical access logs (IP address, time, page).`,
             ],
           },
           {
             title: `Your rights`,
             text: [
-              `You can ask what data I hold about you and ask for it to be corrected or deleted by writing to pedro.derek@icloud.com.`,
+              `Under Brazil’s LGPD and similar laws, you can ask what data I hold about you, ask for it to be corrected or deleted and withdraw your consent by writing to pedro.derek@icloud.com. I reply within 15 days.`,
             ],
           },
           {
             title: `Changes`,
             text: [
-              `When the site starts collecting statistics or receiving messages through a form, this policy will be updated and the new version will appear on this page with a new date.`,
+              `If this policy changes, the new version will appear on this page with a new date.`,
             ],
           },
         ],
@@ -354,28 +373,34 @@
         again: `Another bug`,
       },
       form: {
-        title: `Start a project`,
-        lead: `A few lines about the task — and I will come back with questions or an estimate.`,
+        title: `Get in touch`,
+        lead: `Tell me about the role, the project or the idea — I read and reply myself.`,
         name: `Name`,
         namePlaceholder: `How should I call you`,
         contact: `Email or phone`,
         contactPlaceholder: `you@email.com or +55 61 99999-9999`,
-        types: `What you need`,
-        typeOptions: [`Landing page`, `Website`, `3D / WebGL`, `Game / playable`, `Animation`, `Other`],
-        budget: `Budget`,
-        budgetOptions: [`under $1k`, `$1–3k`, `$3–7k`, `$7k+`, `Not sure yet`],
-        message: `About the project`,
-        messagePlaceholder: `What we are building, timing, links to designs`,
+        types: `What about`,
+        typeOptions: [
+          `Job (full-time or contract)`,
+          `Internship or trainee`,
+          `Freelance project`,
+          `Just saying hi`,
+          `Other`,
+        ],
+        budget: `When does it start`,
+        budgetOptions: [`Right away`, `Within 1 month`, `In 1 to 3 months`, `Not sure yet`],
+        message: `Message`,
+        messagePlaceholder: `The role or the project, timelines and useful links`,
         send: `Send`,
         sending: `Sending…`,
-        sentTitle: `Thank you! I have your brief.`,
-        sentText: `I will reply myself shortly — to the contact you left.`,
+        sentTitle: `Thank you! I got your message.`,
+        sentText: `I will reply soon at the contact you left.`,
         again: `Write again`,
         error: `Could not send. Try again or write to pedro.derek@icloud.com.`,
         offline: `The form is not connected yet — please write to pedro.derek@icloud.com.`,
         required: `Please fill this in`,
         contactInvalid: `Add an email or a phone number`,
-        messageShort: `Write at least a few words about the task`,
+        messageShort: `Write at least a few words`,
         nameShort: `A name needs at least two letters`,
         nameDigits: `A name can’t contain digits`,
         consent: `By sending the form you agree to the`,
