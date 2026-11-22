@@ -120,6 +120,11 @@ export async function onRequestPost({ request, env }) {
       ...(email.attachments.length ? { attachments: email.attachments } : {}),
     }),
   });
-  if (!res.ok) return json({ ok: false, error: "send" }, 502);
+  if (!res.ok) {
+    // devolve só o código do Resend (ex.: 401, 403 validation_error) para diagnóstico; nada da chave ou da mensagem
+    const detail = await res.json().catch(() => ({}));
+    console.error("Resend recusou o envio", res.status, detail.name, detail.message);
+    return json({ ok: false, error: "send", status: res.status, reason: typeof detail.name === "string" ? detail.name : undefined }, 502);
+  }
   return json({ ok: true });
 }
