@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}var consent;try{consent=localStorage.getItem('site.consent');}catch(e){}gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: consent === 'granted' ? 'granted' : 'denied'});gtag('js', new Date());gtag('config', 'G-XXXXXXXXXX');</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page not found — Site</title>
+	<meta name="description" content="There is no such address on this site — the link may be outdated or mistyped.">
+	<meta name="robots" content="noindex">
+	<meta name="theme-color" content="#000000">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="site">
+	<meta property="og:title" content="Page not found — Site">
+	<meta property="og:description" content="There is no such address on this site — the link may be outdated or mistyped.">
+	<meta property="og:image" content="https:///og-image.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Page not found — Site">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:locale:alternate" content="uk_UA">
+	<meta property="og:locale:alternate" content="ru_RU">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="/favicon.ico" sizes="48x48">
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="preload" href="/assets/science-gothic-latin-B4US491-.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" crossorigin src="/assets/index-w3BRHVFD.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vue-BD3PniFr.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-DGPeyn0-.css">
+</head>
+<body>
+	<noscript>
+		<h1>Page not found</h1>
+		<p>There is no such address on this site — the link may be outdated or mistyped.</p>
+		<nav><a href="/">Back to home</a> · <a href="/work/">All projects</a> · <a href="/privacy/">Privacy policy</a></nav>
+	</noscript>
+	<div id="app"></div>
+</body>
+</html>

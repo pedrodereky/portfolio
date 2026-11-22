@@ -7,19 +7,12 @@ on:
 
 jobs:
   check:
-    name: Dados dos projetos e build
+    name: Arquivos do site
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install --no-audit --no-fund
-      - name: Dados de projects.js e totais do index.html
-        run: node scripts/check-projects.mjs
-      # public/assets/js é gerado e versionado (é o que vai para o ar).
-      # Se alguém editar src/ e esquecer do build, o diff aparece aqui.
-      - name: JavaScript publicado igual ao código-fonte
-        run: |
-          npm run build
-          git diff --exit-code public/assets/js
+      - name: Todo arquivo citado existe em public/
+        run: node scripts/check-site.mjs

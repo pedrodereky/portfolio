@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: João Pedro Guimarães
+Contact: pedro.derek@icloud.com
+GitHub: https://github.com/pedrodereky
+LinkedIn: https://www.linkedin.com/in/pedro-guimarães-8b1411372/
+Location: Brasília, Brazil
+
+/* SITE */
+Languages: pt, fr, en
+Standards: HTML5, CSS3, JavaScript
+Components: Vue, Three.js
