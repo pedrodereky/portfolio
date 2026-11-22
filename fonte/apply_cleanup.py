@@ -41,9 +41,10 @@ open(P('index.orig.js'), 'w', encoding='utf8').write('\n'.join(L))
 css = [f for f in os.listdir(R('assets')) if f.startswith('index-') and f.endswith('.css')][0]
 s = open(R('assets', css), encoding='utf8').read()
 s = re.sub(r'@font-face\{[^}]*science-gothic-cyrillic[^}]*\}', '', s)
-HIDE = '.site-about__hobbies{display:none}'  # sem hobbies por enquanto; remova quando houver conteúdo
-if HIDE not in s:
-    s += HIDE
+# escondidos por enquanto: hobbies (sem conteúdo) e o botão "Cookies" do rodapé (o site não usa cookies de rastreamento)
+for HIDE in ('.site-about__hobbies{display:none}', '.site-footer__cookies{display:none}'):
+    if HIDE not in s:
+        s += HIDE
 open(R('assets', css), 'w', encoding='utf8').write(s)
 for f in os.listdir(R('assets')):
     if f.startswith('science-gothic-cyrillic'):

@@ -37,3 +37,21 @@ node scripts/check-site.mjs
 ```
 
 Confere que todo arquivo citado pelo site existe em `public/`. Roda no CI a cada push e pull request.
+
+## Formulário de contato
+
+Os formulários "Fale comigo" e "Achou um bug?" enviam para `functions/api/contato.js` (Cloudflare Pages Function),
+que manda cada mensagem por e-mail usando o [Resend](https://resend.com). Configure em
+Cloudflare → Workers & Pages → joaopedroguimaraes → Settings → Variables and Secrets (ambiente Production):
+
+| Variável | Valor |
+|---|---|
+| `RESEND_API_KEY` (tipo *Secret*) | chave criada em resend.com → API Keys |
+| `CONTACT_TO` | e-mail que recebe as mensagens |
+| `CONTACT_FROM` (opcional) | remetente; sem domínio próprio, o padrão `Portfólio <onboarding@resend.dev>` só entrega para o e-mail da conta do Resend |
+
+Depois de salvar, refaça o último deploy. Sem a chave, a função responde 503 e o site mostra o e-mail para contato direto.
+
+```bash
+node scripts/test-contato.mjs   # testa a função sem rede
+```
