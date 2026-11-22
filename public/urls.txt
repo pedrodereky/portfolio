@@ -1,0 +1,16 @@
+/
+/work/
+/privacy/
+/work/diario-oficial-scanner/
+/work/assina-ai/
+/work/akura-ads/
+/work/my-dashboard/
+/work/live-coach/
+/work/briefbot/
+/work/gabinete-conectado/
+/work/juristech-ai/
+/work/guerra-de-cartas/
+/work/arq-studio/
+/work/wasabii/
+/work/mega-automacao/
+/work/agenda-flow/
