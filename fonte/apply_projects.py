@@ -133,7 +133,7 @@ for w in W:
 </head>
 <body>
 <picture>
-  <source media="(max-aspect-ratio: 3/4)" srcset="/assets/works/{w["shot"]}-narrow.webp">
+  <source media="(max-aspect-ratio: 1/1)" srcset="/assets/works/{w["shot"]}-narrow.webp">
   <img src="/assets/works/{w["shot"]}-wide.webp" alt="{w["title"]}">
 </picture>
 </body>
@@ -236,6 +236,13 @@ open(R('assets', wv), 'w', encoding='utf8').write(s)
 cv = [f for f in os.listdir(R('assets')) if f.startswith('CaseView-') and f.endswith('.js')][0]
 s = from_base(R('assets', cv)).replace('"aria-label":`site — ${', '"aria-label":`João Pedro Guimarães — ${')
 open(R('assets', cv), 'w', encoding='utf8').write(s)
+
+# tela de abertura (BIOS) da cena 3D ainda dizia "Site"
+gh = [f for f in os.listdir(R('assets')) if f.startswith('glyphHeroScene-') and f.endswith('.js')][0]
+s = from_base(R('assets', gh))
+assert '`Site BIOS v6.66`,`(C) 2026 SITE`' in s
+s = s.replace('`Site BIOS v6.66`,`(C) 2026 SITE`', '`JP BIOS v6.66`,`(C) 2026 JOÃO PEDRO`')
+open(R('assets', gh), 'w', encoding='utf8').write(s)
 
 # ------------------------------------------------------------------ sitemap / urls
 urls = ['/', '/work/', '/privacy/'] + [f'/work/{slug(w["id"])}/' for w in W]
