@@ -2387,7 +2387,7 @@ var he = {
     /googlebot|google-inspectiontool|storebot-google|bingbot|yandex\w*bot|duckduckbot|applebot|baiduspider|slurp|petalbot|facebookexternalhit|twitterbot|telegrambot|linkedinbot|slackbot|discordbot|whatsapp|vkshare|skypeuripreview/i,
   bn = () => yn.test(window.navigator.userAgent),
   xn = `site.language`,
-  Sn = () => (bn(), `en`),
+  Sn = () => (bn(), `pt`),
   Cn = () => {
     try {
       let e = window.localStorage.getItem(xn);
@@ -12680,7 +12680,7 @@ var zg = 0.45,
     jobTitle: `Full stack developer`,
     knowsAbout: [`React`, `TypeScript`, `Supabase`, `PostgreSQL`, `Node.js`, `Python`, `Applied AI`, `RAG`],
     profiles: [`linkedin`, `github`],
-    language: `en`,
+    language: `pt`,
     locales: { pt: `pt_BR`, fr: `fr_FR`, en: `en_US` },
   },
   Zg = `noindex`,

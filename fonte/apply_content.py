@@ -304,5 +304,9 @@ o = o[:i] + """      __name: `SiteLogo`,
 rep("r = (e) => (e.from ? `${e.from}${Wi}${e.to || t.t(`experiencePresent`)}` : t.t(`experienceAlongside`));",
     "r = (e) => (e.from ? (e.to === e.from ? e.from : `${e.from}${Wi}${e.to || t.t(`experiencePresent`)}`) : t.t(`experienceAlongside`));")
 
+# idioma padrao: portugues (antes era sempre ingles)
+rep("Sn = () => (bn(), `en`),", "Sn = () => (bn(), `pt`),")
+rep("    language: `en`,\n    locales:", "    language: `pt`,\n    locales:")
+
 open(P('index.orig.js'), 'w', encoding='utf8').write(o)
 print('ok')
